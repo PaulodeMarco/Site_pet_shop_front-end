@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Ração e Brinquedos para Animais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div>
+                <img src="/img/PATA.png" alt="Logo da Loja">
+            </div>
+            <div>
+                <input type="text" placeholder="Pesquisar itens">
+                <button>Buscar</button>
+            </div>
+            <div>
+                <!-- Ícone de carrinho com link para a página do carrinho -->
+                <a href="carrinho.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+
+<div class="cadastro-container">
+    <h1>Cadastro</h1>
+    <form>
+        <div class="form-group">
+            <label for="new-username">Nome de Usuário:</label>
+            <input type="text" id="new-username" name="new-username" required>
+        </div>
+        <div class="form-group">
+            <label for="new-password">Senha:</label>
+            <input type="password" id="new-password" name="new-password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirmar Senha:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <button type="submit" class="btn-cadastrar">Cadastrar</button>
+    </form>
+    <p>Já tem uma conta? <a href="login.html">Login</a></p>
+</div>
+</main>
+<footer>
+<p>&copy; 2023 Pata Amiga Loja de Ração e Brinquedos para Animais</p>
+</footer>
+</body>
+</html>

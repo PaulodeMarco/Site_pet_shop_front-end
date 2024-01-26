@@ -1,0 +1,464 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+#menu img {
+    width: 40px; 
+    height: auto;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+header #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #menu input[type="text"],
+header #menu button {
+    padding: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff6600;
+    text-align: center;
+    height: 2em;
+}
+
+/* Estilos para produtos de destaque */
+#destaques {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap;
+    align-items: flex-start; /* Alinha os produtos ao topo */
+}
+
+.produto {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 5px;
+    width: 180px;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.produto img {
+    max-width: 100%; 
+    max-height: 180px; 
+    object-fit: contain; 
+}
+
+.produto h2 {
+    color: #000;
+    margin: 10px 0;
+    height: 40px;
+    font-size: 16px; 
+}
+
+.produto p {
+    width: 100%; 
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.produto .preco {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.produto button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #ff3300;
+}
+
+/* Estilos para página de Ração para Animais */
+#racao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha os produtos ao topo */
+}
+
+#racao .produto {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 5px;
+    width: 180px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#racao .produto img {
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+#racao .produto h2 {
+    color: #000;
+    margin: 10px 0;
+    height: 40px;
+    font-size: 16px;
+}
+
+#racao .produto p {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#racao .produto .preco {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+#racao .produto button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#racao .produto button:hover {
+    background-color: #ff3300;
+}
+
+/* Estilos para a seção de login e cadastro */
+.login-container, .cadastro-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px; 
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h1, .cadastro-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 90%; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-login, .btn-cadastrar {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-login:hover, .btn-cadastrar:hover {
+    background-color: #0056b3;
+}
+
+.login-container p, .cadastro-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-container a, .cadastro-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container a:hover, .cadastro-container a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o carrinho de compras */
+#carrinho {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo do carrinho */
+    border: 1px solid #ddd; /* Borda do carrinho */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#lista-carrinho {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #aaa4a4;
+    border-radius: 5px;
+    background-color: #e4e4e4; 
+}
+
+#total {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.botoes-carrinho {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botao-continuar{
+    font-size: 16px;
+    background-color: #ff6600; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.botao-finalizar {
+    font-size: 16px;
+    background-color: #21a32c; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.botao-continuar:hover {
+    background-color: #ff3300; 
+}
+
+.botao-finalizar:hover {
+    background-color: #0b6e0b; 
+}
+
+#carrinho-vazio {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#carrinho-vazio p {
+    margin: 10px 0;
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+#continuar-comprando:hover {
+    background-color: #ff6600;
+}
+
+/* Estilos para a seção de brinquedos */
+#brinquedos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha os produtos ao topo */
+}
+
+#brinquedos .produto {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 5px;
+    width: 180px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#brinquedos .produto img {
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: contain;
+}
+
+#brinquedos .produto h2 {
+    color: #000;
+    margin: 10px 0;
+    height: 40px;
+    font-size: 16px;
+}
+
+#brinquedos .produto p {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#brinquedos .produto .preco {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+#brinquedos .produto button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#brinquedos .produto button:hover {
+    background-color: #ff3300;
+}
+
+/* Adicione o efeito de zoom ao passar o mouse */
+.produto:hover {
+    transform: scale(1.08);
+}
+
+/* Estilos para categorias */
+#categorias {
+    margin-top: 30px;
+}
+
+.categoria {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.categoria img {
+    max-width: 100%; 
+    max-height: 280px; 
+    object-fit: contain; 
+}
+
+.categoria h2 {
+    font-size: 25px;
+}
+
+.categoria a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.categoria:hover {
+    background-color: #ff3300; /* Laranja mais escuro ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilos para o ícone do carrinho */
+header #menu i {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para links de login e cadastro */
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Estilos para o botão de busca */
+header #menu button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header #menu button:hover {
+    background-color: #ff3300; /* Laranja mais escuro ao passar o mouse */
+}

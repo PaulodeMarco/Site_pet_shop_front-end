@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Ração e Brinquedos para Animais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div>
+                <img src="/img/PATA.png" alt="Logo da Loja">
+            </div>
+            <div>
+                <input type="text" placeholder="Pesquisar itens">
+                <button>Buscar</button>
+            </div>
+            <div>
+                <!-- Ícone de carrinho com link para a página do carrinho -->
+                <a href="carrinho.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="destaques">
+            <h1>Produtos em Destaque</h1>
+            <!-- Lista de produtos em destaque -->
+            <div class="produto" data-name="Ração para Cães Premium" data-price="49.99">
+                <img src="/img/racao-premium.webp" alt="Ração para Cães 1">
+                <h2>Ração para Cães Premium</h2>
+                <p>Uma ração de alta qualidade para cães.</p>
+                <p class="preco">R$ 49.99</p>
+                <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="produto" data-name="Brinquedo para Gatos com Catnip" data-price="9.99">
+                <img src="/img/brinquedo-para-gat-catnip.jpg" alt="Brinquedo para Gatos 1">
+                <h2>Brinquedo para Gatos com Catnip</h2>
+                <p>Um brinquedo divertido que os gatos adoram.</p>
+                <p class="preco">R$ 9.99</p>
+                <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="produto" data-name="Ração para Cães Premium" data-price="49.99">
+                <img src="/img/racao-premium.webp" alt="Ração para Cães 1">
+                <h2>Ração para Cães Premium</h2>
+                <p>Uma ração de alta qualidade para cães.</p>
+                <p class="preco">R$ 49.99</p>
+                <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <section id="categorias">
+            <h1>Categorias de Produtos</h1>
+            <!-- Lista de categorias -->
+            <div class="categoria">
+                <img src="/img/racao-pet.jpg" alt="Ração para Animais">
+                <h2>Ração para Animais</h2>
+                <a href="racao.html">Ver mais</a>
+            </div>
+
+            <div class="categoria">
+                <img src="/img/brinqudos pag.jfif" alt="Brinquedos para Animais">
+                <h2>Brinquedos para Animais</h2>
+                <a href="brinquedos.html">Ver mais</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Pata Amiga Loja de Ração e Brinquedos para Animais</p>
+    </footer>
+
